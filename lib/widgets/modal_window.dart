@@ -184,7 +184,7 @@ class _MarkedCompaniesDialogState extends State<MarkedCompaniesDialog> {
             ),
             const SizedBox(height: 16),
             Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+             
               children: [
                 ElevatedButton(
                   onPressed: _sortCompaniesByDistance,
