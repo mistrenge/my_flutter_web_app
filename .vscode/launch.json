@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+      {
+        "name": "Launch Chrome",
+        "request": "launch",
+        "type": "chrome",
+        "url": "http://localhost:61004",
+        "webRoot": "${workspaceFolder}"
+      },
+      {
+        "name": "Flutter Web",
+        "request": "launch",
+        "type": "dart",
+        "program": "lib/main.dart",
+        "args": [
+          "--web-port=61004"
+        ]
+      }
+    ]
+  }
+  

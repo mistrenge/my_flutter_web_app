@@ -1,0 +1,46 @@
+name: my_flutter_app
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_map: ^6.0.0
+  flutter_map_supercluster: ^5.0.0-dev.1
+  flutter_map_marker_popup: ^6.1.2
+  latlong2: ^0.9.1
+  geolocator: ^12.0.0
+  geolocator_web: ^4.0.0
+  flutter_osm_plugin: ^1.1.0
+  pointer_interceptor: ^0.10.1+1
+  flutter_map_cancellable_tile_provider: 2.0.0
+  filter_list: ^1.0.3
+  cupertino_icons: ^1.0.6
+  webview_flutter: ^4.0.0 # Füge diese Zeile hinzu
+  http: ^1.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+ 
+  flutter_lints: ^4.0.0
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/firmenadressen.json
+    - assets/icons8-location-pin-50.png
+    - assets/icons8-map-pin-40.png
+    - assets/Strenge Logo.png
+
