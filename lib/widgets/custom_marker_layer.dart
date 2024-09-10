@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_map_supercluster/flutter_map_supercluster.dart';
 
-
 class CustomMarkerClusterLayer extends StatefulWidget {
   final List<Marker> markers;
   final SuperclusterMutableController controller;
@@ -41,7 +40,7 @@ class _CustomMarkerClusterLayerState extends State<CustomMarkerClusterLayer> {
       moveMap: (center, zoom) {
         final mapController = MapController.of(context);
         mapController.move(center, zoom);
-            },
+      },
       clusterWidgetSize: const Size(40, 40),
       builder: (context, position, markerCount, extraClusterData) {
         return Container(
@@ -56,6 +55,10 @@ class _CustomMarkerClusterLayerState extends State<CustomMarkerClusterLayer> {
             ),
           ),
         );
+      },
+      // Hier wird das Overlay ausgeschaltet
+      loadingOverlayBuilder: (context) {
+        return Container(); // Gib ein leeres Container zurück, um das Overlay zu entfernen
       },
     );
   }

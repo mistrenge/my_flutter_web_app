@@ -30,6 +30,7 @@ class _MapScreenState extends State<MapScreen> with SingleTickerProviderStateMix
   late Animation<double> _borderWidthAnimation;
   bool isSidebarOpen = false;
   late SuperclusterMutableController _superclusterController;
+ 
 
   // Verwende ValueNotifier für zentrale Verwaltung der markierten Firmen
   final ValueNotifier<List<Map<String, dynamic>>> markedCompaniesNotifier = ValueNotifier([]);
@@ -372,6 +373,7 @@ class _MapScreenState extends State<MapScreen> with SingleTickerProviderStateMix
                     CustomMarkerClusterLayer(
                       markers: markers,
                       controller: _superclusterController,
+                      
                     ),
                     MarkerLayer(
                       markers: routeMarkers,
