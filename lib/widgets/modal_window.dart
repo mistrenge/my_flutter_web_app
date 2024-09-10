@@ -183,13 +183,14 @@ class _MarkedCompaniesDialogState extends State<MarkedCompaniesDialog> {
               ),
             ),
             const SizedBox(height: 16),
-            Row(
+            Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ElevatedButton(
                   onPressed: _sortCompaniesByDistance,
                   child: const Text('Nach Entfernung sortieren'),
                 ),
+                const SizedBox(height: 8), // Abstand zwischen den Buttons
                 ElevatedButton(
                   onPressed: _openInGoogleMaps,
                   child: const Text('Route in Google Maps'),
