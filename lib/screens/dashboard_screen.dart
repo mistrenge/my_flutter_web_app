@@ -40,7 +40,7 @@ class DashboardScreen extends StatelessWidget {
                   children: <Widget>[
                     // Überschrift
                     const Text(
-                      'Mobile CRM Plattform',
+                      'Pocket CRM',
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.normal,
